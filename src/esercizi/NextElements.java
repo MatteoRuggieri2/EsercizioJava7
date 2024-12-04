@@ -8,9 +8,12 @@ public class NextElements {
 	}
 	
 	/* Questa funzione, dato un array in input:
-	 * - torna TRUE se nell'array sono presenti SOLO due "10" consecutivi e non due 20
-	 * - torna TRUE se nell'array sono presenti SOLO due "20" consecutivi e non due 10
-	 * - torna FALSE negli altri casi */
+	 * - torna TRUE se nell'array sono presenti SOLO due "10" consecutivi e non anche due 20
+	 * - torna TRUE se nell'array sono presenti SOLO due "20" consecutivi e non anche due 10
+	 * - torna FALSE se:
+	 *         - sono presenti entrambi le coppie
+	 *         - non è presente neanche una coppia
+	 */
 	public static boolean isArrayCorrect(int[] inp) {
 		int previousNumber = -1;
 		boolean consecutiveTenCheck = false;
